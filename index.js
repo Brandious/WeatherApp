@@ -4,7 +4,7 @@ const bodyParser = require ('body-parser');
 
 const request = require('request');
 
-
+const apiKey = process.env.apiKey;
 
 app.set('view engine', 'ejs');
 
