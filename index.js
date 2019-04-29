@@ -37,6 +37,6 @@ app.post('/', (req, res)=> {
     });
 });
 
-app.listen(5500, () => {
+app.listen(process.env.PORT, () => {
     console.log('Server is running...');
 });
