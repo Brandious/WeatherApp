@@ -17,7 +17,6 @@
                 <input type="submit" class="ghost-button" value="Get Weather">
             </form>
 
-            
              <% if(weather !== null) { %>
                 <p> <%= weather %> </p>
             <% } %>
@@ -46,7 +45,13 @@
                 demo.innerHTML = "Geolocation is not supported by this browser.";
             }
         }
-       
+
+        function showPosition(position) {
+            demo.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+
+        
     </script>
 </body>
 
